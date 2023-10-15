@@ -4,7 +4,15 @@
  в качестве кода ошибки, 
 иначе длину массива.
 */
-static int tasks(int []arr)
+static int task1(int []arr)
 {
-    
+    if (arr == null)
+    {
+        return -2;
+    }
+    if(arr.Length == 0)
+    {
+        return -1;
+    }
+    return arr.Length;
 }
